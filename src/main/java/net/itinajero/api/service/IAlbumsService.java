@@ -6,5 +6,5 @@ import net.itinajero.api.entity.Album;
 public interface IAlbumsService {
 	
 	List<Album> buscarTodos();
-	
+	void guardar(Album album);
 }
