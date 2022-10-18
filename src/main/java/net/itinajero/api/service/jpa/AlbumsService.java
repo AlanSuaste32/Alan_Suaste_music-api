@@ -18,4 +18,14 @@ public class AlbumsService implements IAlbumsService {
 		return repoAlbums.findAll();
 	}
 
+	@Override
+	public void guardar(Album album) {
+		repoAlbums.save(album);
+	}
+
+	@Override
+	public void eliminar(int idAlbum) {
+		repoAlbums.deleteById(idAlbum);
+	}
+
 }
